@@ -1,0 +1,48 @@
+void port_init();
+void init_devices();
+void timer1_init();
+void timer5_init();
+void motion_pin_config (void);
+void motion_set (unsigned char);
+void forward (void);
+void stop (void); 
+void back (void);
+void left (void);
+void right (void); 
+void velocity(unsigned char, unsigned char);
+void motors_delay();
+void left_encoder_pin_config();
+void right_encoder_pin_config();
+void left_position_encoder_interrupt_init(void);
+void right_position_encoder_interrupt_init(void);
+void buzzer_pin_config(void);
+void buzzer_on();
+void buzzer_off();
+void color_sensor_pin_config(void);
+void color_sensor_pin_interrupt_init(void);
+void color_sensor_scaling();
+void filter_green();
+long int green_read();
+void adc_init();
+void adc_pin_config (void);
+unsigned char ADC_Conversion(unsigned char Ch);
+void angle_rotate(unsigned int Degrees);
+void left_degrees(unsigned int Degrees);
+void right_degrees(unsigned int Degrees);
+void linear_distance_mm(unsigned int DistanceInMM);
+void forward_mm(unsigned int DistanceInMM);
+void back_mm(unsigned int DistanceInMM);
+void follow();
+
+void servo1_pin_config();
+void servo2_pin_config();
+void servo3_pin_config();
+void servo_1(unsigned char degrees);
+void servo_2(unsigned char degrees);
+void servo_3(unsigned char degrees);
+
+// Our functions
+void checkObject(int sharp_sensor);
+void pickWaste();
+void removeObstacle();
+void dump(void);
